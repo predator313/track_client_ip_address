@@ -8,7 +8,7 @@ class SignupForm(UserCreationForm):
     password2=forms.CharField(label='confirm password',widget=forms.PasswordInput(attrs={'class':'form-control'}))
     class Meta:
         model=User
-        fields=['username','first_ame','last_name','email']
+        fields=['username','first_name','last_name','email']
         labels={'first_name':'First Name','last_name':'Last Name','email':'Email'}
         widgets={'username':forms.TextInput(attrs={'class':'form-control'}),
                 'first_name':forms.TextInput(attrs={'class':'form-control'}),
